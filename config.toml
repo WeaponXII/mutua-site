@@ -1,0 +1,84 @@
+# Settings
+baseurl = "http://example.org/"
+languageCode = "en-us"
+title = "MK"
+theme = "phugo"
+googleAnalytics = "UA-XXXXXXX-Y"
+
+[params]
+
+    # Meta
+    description = "Mutua.Vincent portfolio"
+    author = "Jabali Ndungu"
+    keywords = "photographer, hugo, photogallery, portfolio, kenyan, photoshoot"
+    
+    # Headerbar links
+    # Do not put here too many links,
+    # it will break mobile appearance
+
+    [[params.header.links]]
+    name = "About"
+    url = "#footer"
+    icon = "fa-info-circle"    
+    
+    # Footer panel
+    
+    [params.footer.paragraph]
+    headline = "About Me"
+    text = "Hello there, My name's are Vincent Mutua Kyale but most people call me Mutua. I am a 17 year old amateur photographer. I have always had an interest in visual arts and I try my hardest to express my emotions through my lens. This is the beginning of the beginning of my journey. Strap up cause I'm about to take you on this ride... All the support is much appreciated"
+    
+    [params.footer.social]
+    headline = "Follow me"
+
+    [[params.footer.social.links]]
+    label = "Twitter"
+    url = "#"
+    icon = "fa-twitter"
+
+    [[params.footer.social.links]]
+    label = "Facebook"
+    url = "#"
+    icon = "fa-facebook"
+
+    [[params.footer.social.links]]
+    label = "Instagram"
+    url = "#"
+    icon = "fa-instagram"
+
+    
+    # Contact form
+    
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'realEmail' below
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+    
+    [params.footer.contact]
+    realEmail = "example@examle.org"
+    headline = "Get in touch"
+    buttonText = "Send"
+    resetText = "Reset"
+    
+    # 'warning' defines error messages for invalid inputs
+    [params.footer.contact.name]
+    text = "Name *"
+    warning = "Please, enter your name"
+
+    [params.footer.contact.email]
+    text = "Email *"
+    warning = "Please, enter your email."
+
+    [params.footer.contact.message]
+    text = "Message *"
+    warning = "Please, enter your message"
+    
+    # Copyright
+    [params.footer.copyright]
+    name = "Mutua Vincent"
