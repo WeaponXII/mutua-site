@@ -1,3 +1,6 @@
 [submodule "themes/phugo"]
 	path = themes/phugo
 	url = https://github.com/aerohub/phugo
+[submodule "themes/--name"]
+	path = themes/--name
+	url = https://github.com/WeaponXII/phugo
