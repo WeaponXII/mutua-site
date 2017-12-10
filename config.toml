@@ -1,5 +1,5 @@
 # Settings
-baseurl = "http://mutuak.netlify.com"
+baseurl = "http://mutuak.netlify.com/"
 languageCode = "en-us"
 title = "MK"
 theme = "phugo"
