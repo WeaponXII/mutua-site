@@ -1,10 +1,12 @@
 # Settings
-baseurl = "http://example.org/"
+baseurl = "http://mutuak.netlify.com"
 languageCode = "en-us"
 title = "MK"
 theme = "phugo"
 googleAnalytics = "UA-XXXXXXX-Y"
-
+contentDir= "content"
+layoutDir="layouts"
+publishDir="public"
 [params]
 
     # Meta
