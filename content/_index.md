@@ -1,6 +1,6 @@
----
++++
 title:"Instagram"
----
++++
 {{< instagram BcmA6oAlFgh >}}
 {{< instagram BckRGtMlIij >}}
 {{< instagram BciCm_CF1Ua >}}
