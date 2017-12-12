@@ -280,7 +280,52 @@ body.loading #header { -moz-transform: translateY(4em); -webkit-transform: trans
 #header nav > ul > li a.icon:before { color: #505051; float: right; margin-left: 0.75em; }
 #header nav > ul > li a:hover { color: #ffffff !important; }
 #header nav > ul > li a.active { background-color: #242629; }
+$insta-wrapper-max-width: 965px;
+$insta-wrapper-min-height: 100px;
+$transition: all .17s cubic-bezier(.4, 0, 1, 1);
+  
+.image-wrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  flex-grow: 1;
+  justify-content: space-around;
+  margin: 0 auto 24px;
+  max-width: $insta-wrapper-max-width;
+  min-height: $insta-wrapper-min-height;
+  position: relative;
+  width: $width;
+}
+  
+.image-item {
+  animation: slide-item .3s ease forwards;
+  box-sizing: border-box;
+  flex: 1 0 33%;
+  transform: translateY(250px);
+  visibility: hidden;
+  width: $width;
+  @for $i from 1 through 10 {
+   &:nth-child(#{$i}) {
+    animation-delay: (#{$i * .1s});
+   }
+ }
+}
 
+.insta-page {
+  padding: 12px;
+}
+
+.image {
+ display: block;
+ position: relative;
+ transition: $transition;
+ width: $width;
+  
+ img {
+  display: block;
+  max-width: $width;
+ }
+}
 @media screen and (max-width: 736px) { body { padding: 4em 0 0 0; }
   #header { -moz-transform: translateY(0); -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); bottom: auto; height: 4em; padding: 0 1em; top: 0; }
   body.loading #header { -moz-transform: translateY(-3.4em); -webkit-transform: translateY(-3.4em); -ms-transform: translateY(-3.4em); transform: translateY(-3.4em); }
