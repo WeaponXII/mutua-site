@@ -1,6 +1,4 @@
 ---
-albumthumb = "https://www.instagram.com/p/BcmA6oAlFgh/?taken-by=mutua.kyale"
-date:"2017-12-10T14:36:25+03:00"
 title:"Instagram"
 ---
 {{< instagram BcmA6oAlFgh >}}
