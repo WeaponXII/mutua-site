@@ -1,8 +1,8 @@
-+++
+---
 albumthumb = "https://www.instagram.com/p/BcmA6oAlFgh/?taken-by=mutua.kyale"
 title:"Instagram"
 date:"2017-12-10T14:36:25+03:00"
-+++
+---
 {{< instagram BcmA6oAlFgh >}}
 {{< instagram BckRGtMlIij >}}
 {{< instagram BciCm_CF1Ua >}}
