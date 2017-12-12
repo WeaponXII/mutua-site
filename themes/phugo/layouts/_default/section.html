@@ -2,7 +2,7 @@
 {{ .Title }} - {{ .Site.Title }}
 {{ end }}
 {{ define "instafeed" }}
-<div id="instafeed">
+<div id="instafeed"></div>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
@@ -10,7 +10,9 @@
   var userFeed = new Instafeed({
     get: 'user',
     userId: '6249434874',
-
+    template: '<div class="image-item insta-page">' +
+    '<a class="image insta-image" href="{{image}}>' +
+    '<img alt="{{user.full_name}}" src="{{image}}>'+
 
     resolution: 'standard_resolution',
 
@@ -20,5 +22,5 @@
   });
   userFeed.run();
 </script>
-</div>
+
 {{ end }} 
